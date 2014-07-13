@@ -30,7 +30,7 @@ plot_df <- subset(df, Date %in% plot_dates)
 plot_df$Global_active_power <- as.numeric(plot_df$Global_active_power)
 
 # make Plot 4
-png(filename = "png4.png", width = 480, height = 480)
+png(filename = "plot4.png", width = 480, height = 480)
 par(mfrow=c(2,2))
 
 #Subplot 1 (upper left figure)

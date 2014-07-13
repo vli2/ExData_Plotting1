@@ -30,7 +30,7 @@ plot_df <- subset(df, Date %in% plot_dates)
 plot_df$Global_active_power <- as.numeric(plot_df$Global_active_power)
 
 # make Plot 3
-png(filename = "png3.png", width = 480, height = 480)
+png(filename = "plot3.png", width = 480, height = 480)
 
 plot(plot_df$DateTime,plot_df$Sub_metering_1, xlab = "", 
        ylab = "Energy sub metering", type="l")
